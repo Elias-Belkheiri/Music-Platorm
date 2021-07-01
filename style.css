@@ -1,0 +1,218 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body{
+    background-color: #F5F5EF;
+}
+
+@font-face {
+  font-family: mvboli;
+  src: url(assets/fonts/mvboli.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Titillium+Web:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.container, .container-4, .container-5 {
+  width: 100%;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background-image: url("assets/img/m.jpg");
+}
+
+.container-4 {
+  background-image: url("assets/img/qu.jpg");
+  background-size: 130%;
+  margin-top: 20px;
+}
+
+.container-4 p{
+    color: #ffffff;
+    font-size: 60px;
+    font-family: mvboli;
+    padding-right: 200px;
+    width: 39%;
+}
+
+.container-5 {
+  background-image: url("assets/img/grl.jpg");
+  height: 100%;
+  margin-top: 15px;
+}
+
+.container-5 p{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: mvboli;
+}
+
+.background{
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container img{
+    width: 300px;
+    margin-top: 100px;
+}
+
+.container p{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: mvboli;
+    position: relative;
+    bottom: 80px;
+}
+
+.items{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+.item-1{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.item-1 img{
+    width: 370px;
+}
+
+.item-1 h2{
+    font-size: 35px;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+}
+
+.item-1 p{
+    color: #50504A;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    width: 78%;
+}
+
+
+.item-2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.item-2 img{
+    width: 390px;
+    height: 120%;
+}
+
+.item-2 h2{
+    font-size: 35px;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+}
+
+.item-2 p{
+    color: #50504A;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    width: 72%;
+}
+
+.item-3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.item-3 img{
+    width: 400px;
+
+}
+
+.item-3 h1{
+    color: black;
+    font-size: 40px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.item-3 ul li{
+    padding-top: 10px;
+    list-style-image: url(assets/img/icon.png);
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    margin: 30px;
+}
+
+.button  {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #AF3B51;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+a span{
+    color: #ffffff;
+}
+
+
+
+  @media screen and (min-width: 700px){
+    .container p{
+        font-size: 75px;
+    }
+    .container-4 p{
+        margin-right: 550px;
+    }
+  }
